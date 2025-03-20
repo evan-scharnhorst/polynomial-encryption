@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Algebra | Capstone Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Micro+5&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="player">
+      <div class="left-column">
+        <div class="title-container">
+          <h1 class="title">Polynomial Encryption</h1>
+          <h3 class="name">Evan Scharnhorst</h3>
+        </div>
+        <hr />
+
+        <div class="product-container">
+          <p class="input-instructions">
+            Using my encryption tool is easy! Just type the string that you want
+            to encrypt into the text-box below, and then press the encrypt
+            button.
+          </p>
+          <div class="input-container">
+            <input
+              type="text"
+              class="password-input"
+              placeholder="Enter text..."
+            />
+            <button onclick="encrypt()">Encrypt</button>
+          </div>
+
+          <hr />
+          <p class="hash-instruction">
+            This is your encrypted information. Remember, this is designed to be
+            very hard to reverse engineer and the only way to find out if it
+            matches a certain string is to encrypt that string and check if the
+            hash matches.
+          </p>
+          <p class="hash">************</p>
+          <hr />
+          <p class="credits-instruction">
+            If you would like more information use the links
+            below.
+          </p>
+          <div class="credits">
+            <a
+              href="https://docs.google.com/document/d/1FMKroD_nJUD24u-1Ihc3ZWJp2bP9qcwLtAlo9cKUJN4/edit?usp=sharing"
+              >Original Essay</a
+            >
+            |
+            <a href="#https://fonts.google.com/specimen/Cinzel">Font Used</a> |
+            <a href="#0">Github Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="details">
+        <p class="details-description">
+          Polynomials provide a fast and secure way to encrypt data. They
+          involve simple math functions that most computers can perform at very
+          high speeds. The duplicate rate is also very low. This means if I
+          hashed one string using this method the probability of another hashed
+          string having the same value is very low. Polynomial encryption is
+          used by big companies such as Microsoft and Cisco. Polynomial
+          encryption is also very easy to implement. code.<br /><br />
+          Polynomials provide a simple form of hashing. Hashing is an encryption
+          technique that revolves around the principle of irreversibility. This
+          means if you are only given the processed hash of a password (or other
+          sensitive information), it will be very hard to discover the original
+          password. In fact, the only way to decrypt the password would be to
+          hash a random string and then see if the hash matches the hash that
+          you are trying to decrypt. However, if you are the company, you simply
+          hash the user's password as they put it in, and check if it matches
+          the hash in your database. This way, if a hacker gets access to your
+          database, they still will be unlikely to get access to most of your
+          user's passwords.<br /><br />
+          For more information, check out my essay on Polynomial Encryption. I
+          hope you enjoyed my presentation!
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
